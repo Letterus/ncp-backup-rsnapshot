@@ -6,7 +6,7 @@
 # Feel free to adapt it to your needs.
 
 MAILTO="my@adminmail.com"
-## make hourly snapshots of my data - database not safed securely
+## make hourly snapshots of my data - database not saved securely
 0 *		* * *		root	/usr/bin/rsnapshot hourly > /dev/null
 ## dail backup includes a safe backup of mySQL/MariaDB
 30 3  		* * *		root	/bin/bash /root/prebackup.sh && /usr/bin/rsnapshot daily; /root/postbackup.sh
